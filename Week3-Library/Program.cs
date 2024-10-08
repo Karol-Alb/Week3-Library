@@ -7,6 +7,7 @@
     int NoOfPages;
 
     // Constructor for Book object
+    // add a new instance of the book class 
     public Book(string bookTitle, string bookAuthor, string bookISBN, int bookNoOfPages)
     {
         Title = bookTitle;
@@ -32,9 +33,16 @@
         // Create a new instance for the book class
         Book book = new Book("C# for beginners", "Bill Gates", "1234566", 200);
 
+        // another isntance?
+        // title = "Visual studio 2022"
+        // ISBN "123"
+        // No Of Pages
+
+        Book book1 = new Book("Visual Studio 2022", "Microsoft", "123", 70);
+
         // Output book info to the console
         book.DisplayInfo();
-        
+        book1.DisplayInfo();
 
     }
 }
