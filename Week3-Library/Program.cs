@@ -4,6 +4,17 @@
     string Author;
     string ISBN;
 
+    void DisplayInfo()
+    {
+        // Output the book information to the console
+        Console.WriteLine("Book information");
+        Console.WriteLine("----------------");
+        Console.WriteLine($"book title: {Title}");
+        Console.WriteLine($"Book author: {Author}");
+        Console.WriteLine($"Book ISBn: {ISBN}");
+        Console.WriteLine();
+    }
+
     static void Main(string[] args)
     {
         // Create a new instance for the book class
@@ -17,17 +28,9 @@
         book2.Author = "Microsoft";
         book2.ISBN = "1234566";
 
-        // Output the book information to the console
-        Console.WriteLine($"book title: {book.Title}");
-        Console.WriteLine($"Book author: {book.Author}");
-        Console.WriteLine($"Book ISBn: {book.ISBN}");
-
-        // Output second book information
-        Console.WriteLine($"booke title: {book2.Title}");
-        Console.WriteLine($"book author: {book2.Author}");
-        Console.WriteLine($"book ISBN: {book2.ISBN}");
-
-
+        // Output book info to the console
+        book.DisplayInfo();
+        book2.DisplayInfo();
 
     }
 }
